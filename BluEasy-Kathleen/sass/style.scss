@@ -57,15 +57,43 @@ body{
     color: $white;
 }
 
+/* -------------- MENU -------------- */
+.mob-menu{
+    color: none;
+    font-size: 0;
+    @include respond-to($phone){
+        position: absolute;
+        color: #ffffff;
+        display: block;
+        font-size: 1.7em;
+        padding: .3em 0;
+    }
+}
+
 .top-nav{
     margin: .5em 0 0 0;
     padding: 0;
     float: right;
+    @include respond-to($phone){
+        position: fixed;
+        top: -1em;
+        left: -25em;
+        width: 85%;
+        height: 100%;
+        padding: 4em 0 0;
+        background: #262D40;
+        transition: .5s;
+        z-index: 2;
+    }
 }
 
 .top-nav-item{
     display: inline-block;
     margin: 0 .5em;
+    @include respond-to($phone){
+        display: flex;
+        padding: 1em 0 0 .5em;
+    }
 }
 
 .top-nav-link{
@@ -73,12 +101,32 @@ body{
     color: $white;
     font-family: 'NotoBold';
     font-size: $text;
+    @include respond-to($phone){
+        font-size: 20px;
+    }
 }
 
 .top-nav-link:hover{
     color: $lightblue;
     padding: .3em 1em;
     border: .2em solid $lightblue;
+    @include respond-to($phone){
+        border: none;
+        padding: 0;
+    }
+}
+
+.mob-close{
+    color: none;
+    font-size: 0;
+    @include respond-to($phone){
+        display: block;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        right: 1em;
+        top: .8em;
+    }
 }
 
 //-----------------HEADER-----------------
@@ -179,11 +227,18 @@ body{
     margin: 0.3em 0 3em;
     background: $lightgrey;
     display: block;
+    @include respond-to($phone){
+        margin: .3em 0 .5em;
+    }
 }
 
 .port-nav{
     padding: 0;
     float: right;
+    @include respond-to($phone){
+        float: none;
+        text-align: center;
+    }
 }
 
 .port-nav-item{
@@ -202,11 +257,21 @@ body{
     color: $lightblue;
     padding: .3em 1em;
     border: .2em solid $lightblue;
+    @include respond-to($phone){
+        border: none;
+        padding: 0;
+    }
 }
 
 //-----------IMAGES-----------
 .photos{
-    padding: 1em;
+    padding: 1.6em;
+    text-align: center;
+}
+
+.img:hover{
+    background: black;
+    opacity: .9;
 }
 
 
@@ -235,6 +300,10 @@ body{
     font-size: $text;
     padding-right: 7em;
     margin: 2em 0 4em;
+    @include respond-to($phone){
+        padding: 0;
+        margin: 2em 0;
+    }
 }
 
 .btn-visit{
@@ -247,6 +316,9 @@ body{
     border: .3em solid $darkgrey;
     font-size: $text;
     font-family: 'NotoBold';
+    @include respond-to($phone){
+        margin: 2em 0;
+    }
 }
 
 .btn-visit:hover{
@@ -265,6 +337,10 @@ body{
     }
 }
 
+.col-video-mobile{
+    padding: 3em 1em;
+}
+
 //-----------------TWITTER-----------------
 .twitter-section{
     background: $lightblue;
@@ -276,7 +352,6 @@ body{
 
 .twitter-icon{
     float: right;
-    padding: .6em;
 }
 
 .twitter-title{
@@ -294,6 +369,10 @@ body{
     font-family: 'NotoLight';
     font-size: $twitter;
     padding-top: 1.5em;
+    @include respond-to($phone){
+        padding: 0;
+        font-size: 24px;
+    }
 }
 
 .twitter-link{
@@ -301,6 +380,9 @@ body{
     font-family: 'NotoRegular';
     font-size: $twitter;
     text-decoration: none;
+    @include respond-to($phone){
+        font-size: 24px;
+    }
 }
 
 .twitter-link:hover{
@@ -331,7 +413,6 @@ body{
     font-family: 'NotoRegular';
     font-size: $text;
     padding: 2em 0 0;
-    text-align: justify;
     @include respond-to($phone){
         padding: 0;
     }
@@ -342,6 +423,10 @@ body{
     width: 100%;
     margin: 0;
     padding: 2em 0;
+    @include respond-to($phone){
+        padding: 1em 0;
+        text-align: center;
+    }
 }
 
 .john-nav{
@@ -353,7 +438,7 @@ body{
     display: inline-block;
     margin: 0 1.5em 0 0;
     @include respond-to($phone){
-
+        margin: .3em;
     }
 }
 
@@ -361,10 +446,6 @@ body{
     text-decoration: none;
     padding: 1em 1em;
     border: .2em solid $white;
-    @include respond-to($phone){
-        padding: .5em;
-
-    }
 }
 
 .john-nav-link:hover{
@@ -382,7 +463,6 @@ body{
 
 .testimonial-icon{
     float: right;
-    padding: .6em;
 }
 
 .testimonial-title{
@@ -402,6 +482,10 @@ body{
     //padding-top: 1.5em;
     margin-bottom: revert;
     line-height: 2;
+    @include respond-to($phone){
+        font-size: 24px;
+        line-height: normal;
+    }
 }
 
 .testimonial-quote{
@@ -448,6 +532,9 @@ body{
     font-size: $text;
     padding-right: 4em;
     line-height: 1.8;
+    @include respond-to($phone){
+        padding-right: 1em;
+    }
 }
 
 .contact-text-box{

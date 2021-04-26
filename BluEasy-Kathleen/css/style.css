@@ -69,15 +69,49 @@ body {
   color: #fff;
 }
 
+/* -------------- MENU -------------- */
+.mob-menu {
+  color: none;
+  font-size: 0;
+}
+@media only screen and (max-width: 480px) {
+  .mob-menu {
+    position: absolute;
+    color: #ffffff;
+    display: block;
+    font-size: 1.7em;
+    padding: 0.3em 0;
+  }
+}
+
 .top-nav {
   margin: 0.5em 0 0 0;
   padding: 0;
   float: right;
 }
+@media only screen and (max-width: 480px) {
+  .top-nav {
+    position: fixed;
+    top: -1em;
+    left: -25em;
+    width: 85%;
+    height: 100%;
+    padding: 4em 0 0;
+    background: #262D40;
+    transition: 0.5s;
+    z-index: 2;
+  }
+}
 
 .top-nav-item {
   display: inline-block;
   margin: 0 0.5em;
+}
+@media only screen and (max-width: 480px) {
+  .top-nav-item {
+    display: flex;
+    padding: 1em 0 0 0.5em;
+  }
 }
 
 .top-nav-link {
@@ -86,11 +120,37 @@ body {
   font-family: "NotoBold";
   font-size: 14px;
 }
+@media only screen and (max-width: 480px) {
+  .top-nav-link {
+    font-size: 20px;
+  }
+}
 
 .top-nav-link:hover {
   color: #4bcaff;
   padding: 0.3em 1em;
   border: 0.2em solid #4bcaff;
+}
+@media only screen and (max-width: 480px) {
+  .top-nav-link:hover {
+    border: none;
+    padding: 0;
+  }
+}
+
+.mob-close {
+  color: none;
+  font-size: 0;
+}
+@media only screen and (max-width: 480px) {
+  .mob-close {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    right: 1em;
+    top: 0.8em;
+  }
 }
 
 .page-header {
@@ -195,10 +255,21 @@ body {
   background: #515f67;
   display: block;
 }
+@media only screen and (max-width: 480px) {
+  .linea2 {
+    margin: 0.3em 0 0.5em;
+  }
+}
 
 .port-nav {
   padding: 0;
   float: right;
+}
+@media only screen and (max-width: 480px) {
+  .port-nav {
+    float: none;
+    text-align: center;
+  }
 }
 
 .port-nav-item {
@@ -218,9 +289,21 @@ body {
   padding: 0.3em 1em;
   border: 0.2em solid #4bcaff;
 }
+@media only screen and (max-width: 480px) {
+  .port-nav-link:hover {
+    border: none;
+    padding: 0;
+  }
+}
 
 .photos {
-  padding: 1em;
+  padding: 1.6em;
+  text-align: center;
+}
+
+.img:hover {
+  background: black;
+  opacity: 0.9;
 }
 
 .default-section {
@@ -250,6 +333,12 @@ body {
   padding-right: 7em;
   margin: 2em 0 4em;
 }
+@media only screen and (max-width: 480px) {
+  .default-text {
+    padding: 0;
+    margin: 2em 0;
+  }
+}
 
 .btn-visit {
   text-decoration: none;
@@ -261,6 +350,11 @@ body {
   border: 0.3em solid #353f47;
   font-size: 14px;
   font-family: "NotoBold";
+}
+@media only screen and (max-width: 480px) {
+  .btn-visit {
+    margin: 2em 0;
+  }
 }
 
 .btn-visit:hover {
@@ -278,6 +372,10 @@ body {
   width: auto;
 }
 
+.col-video-mobile {
+  padding: 3em 1em;
+}
+
 .twitter-section {
   background: #4bcaff;
   padding: 5em 20em;
@@ -290,7 +388,6 @@ body {
 
 .twitter-icon {
   float: right;
-  padding: 0.6em;
 }
 
 .twitter-title {
@@ -309,12 +406,23 @@ body {
   font-size: 28px;
   padding-top: 1.5em;
 }
+@media only screen and (max-width: 480px) {
+  .twitter-text {
+    padding: 0;
+    font-size: 24px;
+  }
+}
 
 .twitter-link {
   color: #fff;
   font-family: "NotoRegular";
   font-size: 28px;
   text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .twitter-link {
+    font-size: 24px;
+  }
 }
 
 .twitter-link:hover {
@@ -346,7 +454,6 @@ body {
   font-family: "NotoRegular";
   font-size: 14px;
   padding: 2em 0 0;
-  text-align: justify;
 }
 @media only screen and (max-width: 480px) {
   .john-text {
@@ -359,6 +466,12 @@ body {
   margin: 0;
   padding: 2em 0;
 }
+@media only screen and (max-width: 480px) {
+  .john-menu {
+    padding: 1em 0;
+    text-align: center;
+  }
+}
 
 .john-nav {
   margin: 0;
@@ -369,15 +482,16 @@ body {
   display: inline-block;
   margin: 0 1.5em 0 0;
 }
+@media only screen and (max-width: 480px) {
+  .john-nav-item {
+    margin: 0.3em;
+  }
+}
+
 .john-nav-link {
   text-decoration: none;
   padding: 1em 1em;
   border: 0.2em solid #fff;
-}
-@media only screen and (max-width: 480px) {
-  .john-nav-link {
-    padding: 0.5em;
-  }
 }
 
 .john-nav-link:hover {
@@ -396,7 +510,6 @@ body {
 
 .testimonial-icon {
   float: right;
-  padding: 0.6em;
 }
 
 .testimonial-title {
@@ -415,6 +528,12 @@ body {
   font-size: 28px;
   margin-bottom: revert;
   line-height: 2;
+}
+@media only screen and (max-width: 480px) {
+  .testimonial-text {
+    font-size: 24px;
+    line-height: normal;
+  }
 }
 
 .testimonial-quote {
@@ -462,6 +581,11 @@ body {
   font-size: 14px;
   padding-right: 4em;
   line-height: 1.8;
+}
+@media only screen and (max-width: 480px) {
+  .contact-text {
+    padding-right: 1em;
+  }
 }
 
 .contact-text-box {
