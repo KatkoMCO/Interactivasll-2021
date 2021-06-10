@@ -47,7 +47,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light top-bar">
 
                     <!--LOGO-->
-                    <a href="./index.html"><img src="imgs/LOGO.png" alt=""></a>
+                    <a href="./index.php"><img src="imgs/LOGO.png" alt=""></a>
 
                     <!--MENU HAMBURGUESA-->
                     <button class="navbar-toggler menu-mob" type="button" data-bs-toggle="collapse"
@@ -62,7 +62,7 @@
 
                             <!--OPCIONES DE MENU-->
                             <li class="nav-item">
-                                <a class="nav-link top-nav-link active" aria-current="page" href="./index.html">Home</a>
+                                <a class="nav-link top-nav-link active" aria-current="page" href="./index.php">Home</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -71,20 +71,20 @@
                                     Categories
                                 </a>
                                 <ul class="dropdown-menu dropdown-box" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Youtubers</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">PvP</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Shooters</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Multiplayer</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Fight</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">E3</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">E-Sports</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Horror</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">RPG</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Blizzcon</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Sumer Game Fest</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">GDC</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Ubisoft Forward</a></li>
-                                    <li><a class="dropdown-item top-dropdown-item" href="./category.html">Nintendo Direct</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Youtubers</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">PvP</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Shooters</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Multiplayer</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Fight</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">E3</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">E-Sports</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Horror</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">RPG</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Blizzcon</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Sumer Game Fest</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">GDC</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Ubisoft Forward</a></li>
+                                    <li><a class="dropdown-item top-dropdown-item" href="./category.php">Nintendo Direct</a></li>
 
                                     <li>
                                 </ul>
@@ -140,8 +140,8 @@
 
                         <p class="season-time">Time Left: 2:24:37:08</p>
                         <div class="hastags-container">
-                            <a class="id-hastag" href="./category.html">#Youtubers</a>
-                            <a class="id-hastag" href="./category.html">#PvP</a>
+                            <a class="id-hastag" href="./category.php">#Youtubers</a>
+                            <a class="id-hastag" href="./category.php">#PvP</a>
                         </div>
                         <p class="season-description"><small class="text-muted">Last updated 3 mins ago</small></p>
 
@@ -151,7 +151,7 @@
 
                         <!---------REGISTER BTN--------->
                         <div class="btn-container">
-                            <a href="./specificevent.html" class="btn-season">REGISTER</a>
+                            <a href="./specificevent.php" class="btn-season">REGISTER</a>
                         </div>
                     </div>
                 </div>
@@ -165,38 +165,38 @@
         <span class="event-line"></span>
         <!---------EVENTS LIST PICS--------->
         <div class="grid-wrapper">
-            <a class="large" href="./specificevent.html">
+            <a class="large" href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event1.jpg" alt="">
             </a>
             <!-------------------------------------------------->
-            <a class="wide" href="./specificevent.html">
+            <a class="wide" href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event2.jpg" alt="">
             </a>
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event3.jpg" alt="">
             </a>
             <!-------------------------------------------------->
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event4.jpg" alt="">
             </a>
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event5.jpg" alt="">
             </a>
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event6.jpg" alt="">
             </a>
             <!-------------------------------------------------->
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event7.jpg" alt="">
             </a>
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event8.jpg" alt="">
             </a>
-            <a href="./specificevent.html">
+            <a href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event9.jpg" alt="">
             </a>
             <!-------------------------------------------------->
-            <a class="large" href="./specificevent.html">
+            <a class="large" href="./specificevent.php">
                 <img class="grid-pics" src="./imgs/event10.jpg" alt="">
             </a>
         </div>
